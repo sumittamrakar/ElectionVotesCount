@@ -1,0 +1,81 @@
+<!doctype html>
+<!--Assignment 3   Functioning Form
+    Name           Sumit Tamrakar
+    File name      tamrakar_Sumit_Assignment7a.html
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Assignment 7A</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <h1>Assignment 7A</h1>
+    <h2>Local Storage</h2>
+    <form id="candidatesForm">
+        <!--Candidates Form Section-->
+        <fieldset>
+            <legend>Candidates</legend>
+            <label for="candidate1">Candidate 1</label>
+            <input class="candidate" id="candidate1">
+            <select class="party" id="party1">
+                <option value="democratic">Democratic</option>
+                <option value="independant">Independant</option>
+                <option value="republic">Republican</option>
+            </select>
+            <br />
+            <label for="candidate2">Candidate 2</label>
+            <input class="candidate" id="candidate2">
+            <select class="party" id="party2">
+                <option value="democratic">Democratic</option>
+                <option value="independant">Independant</option>
+                <option value="republic">Republican</option>
+            </select>
+            <br />
+            <label for="candidate3">Candidate 3</label>
+            <input class="candidate" id="candidate3">
+            <select class="party" id="party3">
+                <option value="democratic">Democratic</option>
+                <option value="independant">Independant</option>
+                <option value="republic">Republican</option>
+            </select>
+        </fieldset>
+        <!--Votes Form Section-->
+        <fieldset>
+            <legend>Votes</legend>
+            <label for="votesCandidate1">Votes for Candidate 1</label>
+            <input class="count" id="votesCandidate1"><span class="error" id="errorVote0"></span>
+            <br />
+            <label for="votesCandidate2">Votes for Candidate 2</label>
+            <input class="count" id="votesCandidate2"><span class="error" id="errorVote1"></span>
+            <br />
+            <label for="votesCandidate3">Votes for Candidate 3</label>
+            <input class="count" id="votesCandidate3"><span class="error" id="errorVote2"></span>
+        </fieldset>
+        <!--Current Results Form Section-->
+        <fieldset>
+            <legend>Current Results</legend>
+            <label for="date">As of</label>
+            <input type="date" id="date"><span class="error" id="dateError"></span>
+            <br />
+            <label for="totalVotes">Total Votes counted</label>
+            <output id="totalVotes" class="result"></output>
+            <br />
+            <label for="candidate1Percent" id="cand1">Candidate 1 Percentage</label>
+            <output id="candidate1Percent" class="result"></output>
+            <br />
+            <label for="candidate2Percent" id="cand2">Candidate 2 Percentage</label>
+            <output id="candidate2Percent" class="result"></output>
+            <br />
+            <label for="candidate3Percent" id="cand3">Candidate 3 Percentage</label>
+            <output id="candidate3Percent" class="result"></output>
+        </fieldset>
+        <br />
+        <button type="button" id="calculate">Calculate</button>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

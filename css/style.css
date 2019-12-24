@@ -1,0 +1,33 @@
+/*Assignment 3   Functioning Form
+  Name           Sumit Tamrakar
+  File name      tamrakar_Sumit_Assignment7a.css
+*/
+
+body {
+    background: lightyellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#candidatesForm {
+    border: 5px double blue;
+    padding: 5px;
+}
+
+label {
+    font-size: 18px;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.result {
+    color: green;
+    font-style: bold;
+}
